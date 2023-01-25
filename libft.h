@@ -6,7 +6,7 @@
 /*   By: sharsune <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 17:09:09 by sharsune          #+#    #+#             */
-/*   Updated: 2022/11/17 13:58:04 by sharsune         ###   ########.fr       */
+/*   Updated: 2023/01/23 13:39:59 by sharsune         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -49,4 +49,11 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int nb, int fd);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+int		counting_putchar(int c, int fd);
+int		printstr_fd(char *str, int fd);
+int		printnbr_fd(int nb, int fd);
+int		ft_printf(const char *str, ...);
+int		ft_print_pointer_fd(unsigned long long nb, int fd);
+int		ft_print_hex_fd(unsigned int nb, const char *str, int fd);
+int		ft_print_unsigned_fd(unsigned int nb, int fd);
 #endif
